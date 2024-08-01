@@ -12,7 +12,13 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
     flex:1
-`
+`;
+
+const Language = styled.span`
+    font-size: 14px;
+    cursor: pointer;
+`;
+
 const Center = styled.div`
     flex:1
 `
@@ -26,7 +32,7 @@ const Navbar = ()=> {
     return(
         <Container>
             <Wrapper>
-                <Left>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, commodi blanditiis! Nemo, explicabo, modi voluptatibus sit totam est saepe vel libero sequi expedita cum minus?</Left>
+                <Left><Language>EN</Language></Left>
                 <Center>center</Center>
                 <Right>right</Right>
             </Wrapper>
