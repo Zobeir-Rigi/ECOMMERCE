@@ -1,4 +1,5 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons"
+import { useEffect, useState } from "react";
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -6,6 +7,7 @@ const Container = styled.div`
     height: 100vh;
     display: flex;
     position: relative;
+    overflow: hidden;
 `;
 const Arrow = styled.div`
     width: 50px;
@@ -23,15 +25,18 @@ const Arrow = styled.div`
     margin: auto;
     cursor: pointer;
     opacity: 0.5;
+    z-index: 2;
 `;
 const Wrapper = styled.div`
     height: 100%;
+    display: flex;
 `;
 const Slide = styled.div`
     width: 100vm;
     height: 100vh;
     display: flex;
     align-items:center;
+    background-color: #${props=>props.bg};
 `;
 const ImgContainer = styled.div`
   height: 100%;
@@ -62,13 +67,17 @@ const Button = styled.button`
 `;
 
 const Slider = () =>{
+    const[slideIndex, setSlideIndex]=useState(0)
+    const handleClick = (direction)=>{
+
+    };
     return(
         <Container>
-            <Arrow direction="left">
+            <Arrow direction="left" onClick={()=>handleClick("left")} >
                 <ArrowLeftOutlined />
             </Arrow>
             <Wrapper>
-                <Slide>
+                <Slide bg = "f5fafd">
                     <ImgContainer>
                         <Image src="https://image.hm.com/assets/hm/4f/42/4f428bfd339df4a2255e9639845aa1a52f9aa447.jpg?imwidth=1536"/>
                     </ImgContainer>
@@ -78,8 +87,29 @@ const Slider = () =>{
                         <Button>SHOP NOW</Button>
                     </InfoContainer>
                 </Slide>
+                <Slide bg = "fcf1ed">
+                    <ImgContainer>
+                        <Image src="https://image.hm.com/assets/hm/4f/42/4f428bfd339df4a2255e9639845aa1a52f9aa447.jpg?imwidth=1536"/>
+                    </ImgContainer>
+                    <InfoContainer>
+                        <Title>Summer sall</Title>
+                        <Desc>good Quality and price, Hurry up to take one !!!</Desc>
+                        <Button>SHOP NOW</Button>
+                    </InfoContainer>
+                </Slide>
+                <Slide bg="fbf0f4">
+                    <ImgContainer>
+                        <Image src="https://image.hm.com/assets/hm/4f/42/4f428bfd339df4a2255e9639845aa1a52f9aa447.jpg?imwidth=1536"/>
+                    </ImgContainer>
+                    <InfoContainer>
+                        <Title>Summer sall</Title>
+                        <Desc>good Quality and price, Hurry up to take one !!!</Desc>
+                        <Button>SHOP NOW</Button>
+                    </InfoContainer>
+                </Slide>
+                
             </Wrapper>
-            <Arrow direction="right">
+            <Arrow direction="right" onClick={()=>handleClick("right")}>
                 <ArrowRightOutlined />
             </Arrow>
         </Container>
