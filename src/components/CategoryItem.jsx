@@ -24,10 +24,16 @@ const Info = styled.div`
 
 `
 const Title = styled.h1`
-    display: flex;
+    color: white;
+    margin-bottom: 20px;
 `
 const Button = styled.button`
-    display: flex;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    font-weight: 600;
 `
 const CategoryItem = ({el}) => {
     return(
