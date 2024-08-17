@@ -7,18 +7,29 @@ const Container = styled.div`
 `
 const Left = styled.div`
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 `
 const Logo = styled.h1`
 
 `
 const Decs = styled.p`
-
+    margin: 20px 0px;
 `
 const SocialContainer = styled.div`
-
+    display: flex;
 `
 const SocialIcon = styled.div`
-
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    color:white ;
+    background-color: #${props=>props.color} ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 `
 const Center = styled.div`
         flex: 1;
@@ -38,16 +49,16 @@ const Footer = () =>{
                 <Decs>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo alias vel impedit aliquam repellat ad quidem quas saepe eos minima atque, expedita officia quos rerum ut nihil adipisci qui iure.
                 </Decs>
                 <SocialContainer>
-                    <SocialIcon>
+                    <SocialIcon color="3B5999">
                         <Twitter />
                     </SocialIcon>
-                    <SocialIcon>
+                    <SocialIcon color="E4405F">
                         <Instagram />
                     </SocialIcon>
-                    <SocialIcon>
+                    <SocialIcon color="55ACEE">
                         <GitHub />
                     </SocialIcon>
-                    <SocialIcon>
+                    <SocialIcon color="E60023">
                         <LinkedIn />
                     </SocialIcon>
                 </SocialContainer>
