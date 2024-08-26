@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {  } from '@material-ui/core';
-import { GitHub, Instagram, LinkedIn, Twitter } from '@material-ui/icons';
+import { GitHub, Instagram, LinkedIn, MailOutline, Phone, Room, Twitter } from '@material-ui/icons';
 
 const Container = styled.div`
     display: flex;
@@ -53,8 +53,16 @@ const ListItem = styled.li`
 const Right = styled.div`
         flex: 1;
         padding: 20px;
-
 `
+const ContactItem = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+`;
+
+const Payment = styled.img`
+    width: 50%;
+`;
 
 
 const Footer = () =>{
@@ -94,7 +102,19 @@ const Footer = () =>{
           <ListItem>Terms</ListItem>
         </List>
             </Center>
-            <Right></Right>
+            <Right>
+            <Title>Contact</Title>
+        <ContactItem>
+          <Room style={{marginRight:"10px"}}/> 14 Bedford Row, WC1R 4ED
+        </ContactItem>
+        <ContactItem>
+          <Phone style={{marginRight:"10px"}}/> +44 7399058028
+        </ContactItem>
+        <ContactItem>
+          <MailOutline style={{marginRight:"10px"}} /> rigi.zobir@yahoo.com
+        </ContactItem>
+        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+            </Right>
         </Container>
     )
 }
