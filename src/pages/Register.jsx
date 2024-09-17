@@ -1,8 +1,11 @@
+import styled from "styled-components";
+const Container = styled.div``
+
 const Register = () => {
     return (
-        <div>
-        </div>
-    )
+        <Container>
+        </Container>
+                )
 }
 
 export default Register
