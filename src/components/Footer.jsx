@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import {  } from '@material-ui/core';
 import { GitHub, Instagram, LinkedIn, MailOutline, Phone, Room, Twitter } from '@material-ui/icons';
 import { mobile } from "../responsive";
+import StyledLink from "../StyledLink";
 
 const Container = styled.div`
     display: flex;
@@ -74,7 +75,10 @@ const Footer = () =>{
         <Container>
             <Left>
                 <Logo>ICDI.</Logo>
-                <Decs>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo alias vel impedit aliquam repellat ad quidem quas saepe eos minima atque, expedita officia quos rerum ut nihil adipisci qui iure.
+                <Decs> 
+                    At ICDI, we believe in the power of self-expression through fashion. Whether you're looking
+                    for timeless classics or the latest trends, we've got you covered. Browse our collection and
+                    discover pieces that not only complement your style but also empower you to say, "I can do it."
                 </Decs>
                 <SocialContainer>
                     <SocialIcon color="3B5999">
@@ -94,7 +98,8 @@ const Footer = () =>{
             <Center>
             <Title>Useful Links</Title>
         <List>
-          <ListItem>Home</ListItem>
+          <ListItem>
+          <StyledLink to="/">Home</StyledLink></ListItem>
           <ListItem>Cart</ListItem>
           <ListItem>Man Fashion</ListItem>
           <ListItem>Woman Fashion</ListItem>
