@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {  } from '@material-ui/core';
 import { GitHub, Instagram, LinkedIn, MailOutline, Phone, Room, Twitter } from '@material-ui/icons';
-import { mobile } from "../responsive";
+import { mobile} from "../responsive";
 import StyledLink from "../StyledLink";
 
 const Container = styled.div`
