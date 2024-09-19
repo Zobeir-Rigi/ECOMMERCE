@@ -1,5 +1,5 @@
 import { Badge } from "@material-ui/core";
-import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined,HomeOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -79,6 +79,9 @@ const Navbar = () => {
           <Logo>ICDI.</Logo>
         </Center>
         <Right>
+        <MenuItems>
+            <StyledLink to="/home"><HomeOutlined /></StyledLink>
+          </MenuItems>
           <MenuItems>
             <StyledLink to="/register">REGISTER</StyledLink>
           </MenuItems>
