@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { HomeOutlined } from "@material-ui/icons";
+import StyledLink from "../StyledLink";
 
 const Container = styled.div`
   width: 100vw;
@@ -65,7 +67,11 @@ const Register = () => {
                         By creating an account, I consent to the processing of my personal
                         data in accordance with the <b>PRIVACY POLICY</b>
                     </Agreement>
+                    <div style={{ width: "100%", display:"flex", justifyContent:"space-between"}}>
                     <Button>CREATE</Button>
+                      <StyledLink to="/"><HomeOutlined style={{marginTop:"10px"}} /></StyledLink>
+                    </div>
+
                 </Form>
             </Wrapper>
         </Container>

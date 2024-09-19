@@ -80,13 +80,13 @@ const Navbar = () => {
         </Center>
         <Right>
         <MenuItems>
-            <StyledLink to="/home"><HomeOutlined /></StyledLink>
+            {/* <StyledLink to="/"><HomeOutlined /></StyledLink> */}
           </MenuItems>
           <MenuItems>
             <StyledLink to="/register">REGISTER</StyledLink>
           </MenuItems>
           <MenuItems>
-            <StyledLink to="/register">SIGN IN</StyledLink>
+            <StyledLink to="/login">SIGN IN</StyledLink>
           </MenuItems>
           <MenuItems>
             <Badge badgeContent={4} color="primary">
