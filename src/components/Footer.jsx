@@ -82,16 +82,22 @@ const Footer = () =>{
                 </Decs>
                 <SocialContainer>
                     <SocialIcon color="3B5999">
-                        <Twitter />
+                        <a href="https://x.com/Teraveler94" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <Twitter />
+                        </a>
                     </SocialIcon>
                     <SocialIcon color="E4405F">
                         <Instagram />
                     </SocialIcon>
                     <SocialIcon color="55ACEE">
-                        <GitHub />
+                        <a href="https://github.com/Zobeir-Rigi" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <GitHub />
+                        </a>
                     </SocialIcon>
                     <SocialIcon color="E60023">
-                        <LinkedIn />
+                    <a href="https://www.linkedin.com/in/zobeir-r-37068217b/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <LinkedIn />
+                        </a>
                     </SocialIcon>
                 </SocialContainer>
             </Left>
