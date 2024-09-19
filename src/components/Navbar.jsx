@@ -1,5 +1,5 @@
 import { Badge } from "@material-ui/core";
-import { Search, ShoppingCartOutlined,HomeOutlined } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined} from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -80,7 +80,6 @@ const Navbar = () => {
         </Center>
         <Right>
         <MenuItems>
-            {/* <StyledLink to="/"><HomeOutlined /></StyledLink> */}
           </MenuItems>
           <MenuItems>
             <StyledLink to="/register">REGISTER</StyledLink>
