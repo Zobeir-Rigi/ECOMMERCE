@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import {mobile} from "../responsive";
+import { HomeOutlined } from "@material-ui/icons";
+import StyledLink from "../StyledLink";
 
 const Container = styled.div`
   width: 100vw;
@@ -67,7 +69,10 @@ const Login = () => {
           <Input placeholder="password" />
           <Button>LOGIN</Button>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          <div style={{ width: "100%", display:"flex", justifyContent:"space-between"}}>
+            <Link>CREATE A NEW ACCOUNT</Link>
+            <StyledLink to="/"><HomeOutlined /></StyledLink>
+          </div>
         </Form>
       </Wrapper>
     </Container>
