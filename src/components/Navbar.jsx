@@ -3,8 +3,7 @@ import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 import { mobile } from "../responsive";
-
-
+import { Link } from 'react-router-dom';
 const Container = styled.div`
     height: 60px;
     ${mobile({ height: "50px" })}
@@ -82,8 +81,8 @@ const Navbar = ()=> {
                     <Logo>ICDI.</Logo>
                 </Center>
                 <Right>
-                    <MenuItems>REGISTER</MenuItems>
-                    <MenuItems>SIGN IN</MenuItems>
+                    <MenuItems><Link to="/register">REGISTER</Link></MenuItems>
+                    <MenuItems><Link to="/register">SIGN IN</Link></MenuItems>
                     <MenuItems>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCartOutlined />
